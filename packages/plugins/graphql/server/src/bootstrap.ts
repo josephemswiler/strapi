@@ -5,7 +5,7 @@ import {
   ApolloServerPluginLandingPageGraphQLPlayground,
 } from 'apollo-server-core';
 import depthLimit from 'graphql-depth-limit';
-import { graphqlUploadKoa } from 'graphql-upload';
+import { graphqlUploadKoa } from 'graphql-upload-minimal';
 import type { Config } from 'apollo-server-core';
 import type { Strapi } from '@strapi/types';
 
@@ -18,7 +18,7 @@ const merge = mergeWith((a, b) => {
 });
 
 /**
- * Register the upload middleware powered by graphql-upload in Strapi
+ * Register the upload middleware powered by graphql-upload-minimal in Strapi
  * @param {object} strapi
  * @param {string} path
  */
